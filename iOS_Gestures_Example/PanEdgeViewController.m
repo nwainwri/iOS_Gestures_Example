@@ -16,22 +16,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    CGFloat width = 100;
+    CGFloat height = 300;
+    CGRect frame = CGRectMake(CGRectGetMaxX(self.view.bounds) - 20, CGRectGetMaxY(self.view.bounds) /4, width, height);
+    
+    UIView *view = [[UIView alloc] initWithFrame:frame];
+    
+    view.backgroundColor = [UIColor greenColor];
+    
+    [self.view addSubview:view];
+    
+    UIScreenEdgePanGestureRecognizer *panEdgeGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(grabEdge:)];
+    [self.view addGestureRecognizer:panEdgeGesture];
+    
+//    [self.view addGestureRecognizer:swiperight];
+    //[panGesture release];
+    
+//    UISwipeGestureRecognizer *swiperight = [[UISwipeGestureRecognizer alloc]initWithTarget:self.view action:@selector(swiperight:)];
+//    swiperight.numberOfTouchesRequired = 1;
+//    swiperight.direction = UISwipeGestureRecognizerDirectionRight;
+//    [self.view addGestureRecognizer:swiperight];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) grabEdge:(UIScreenEdgePanGestureRecognizer *) sender{
+// do shit here
+//    UIRectEdgeLeft
+    NSLog(@"PAN ECGE");
+    
+    
+    
+    
 }
-*/
 
 @end

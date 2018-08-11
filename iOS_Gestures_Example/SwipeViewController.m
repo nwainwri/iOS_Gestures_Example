@@ -10,6 +10,11 @@
 
 @interface SwipeViewController ()
 
+//-(void)swiperight:(UISwipeGestureRecognizer *)gestureRecognizer;
+//
+//-(void)swipeleft:(UISwipeGestureRecognizer *)gestureRecognizer;
+
+
 @end
 
 @implementation SwipeViewController
@@ -18,24 +23,39 @@
     [super viewDidLoad];
   
     UISwipeGestureRecognizer *swipeleft = [[UISwipeGestureRecognizer alloc]initWithTarget:self.view action:@selector(swipeleft:)];
+    swipeleft.numberOfTouchesRequired = 1;
     swipeleft.direction = UISwipeGestureRecognizerDirectionLeft;
     [self.view addGestureRecognizer:swipeleft];
     
     UISwipeGestureRecognizer *swiperight = [[UISwipeGestureRecognizer alloc]initWithTarget:self.view action:@selector(swiperight:)];
+    swiperight.numberOfTouchesRequired = 1;
     swiperight.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swiperight];
     
     
+    
 }
 
-// DOESN'T WORK; WHY NOT
+//  *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[UIView swipeleft:]: unrecognized selector sent to instance 0x7fa31a70d990'
+// https://stackoverflow.com/questions/6326816/views-navigation-using-swipe-gesture
 
--(void)swipeleft:(UISwipeGestureRecognizer *)gestureRecognizer {
-    //NSLog(@"LEFT");
+-(void)swipeleft:(UISwipeGestureRecognizer *)gestureRecognizer{
+    [UIView animateWithDuration:0.5 animations:^{
+        self.view.frame = CGRectOffset(self.view.frame, -320.0, 0.0);
+//        self.viewBlack.frame = CGRectOffset(self.viewBlack.frame, -320.0, 0.0);
+//        self.viewGreen.frame = CGRectOffset(self.viewGreen.frame, -320.0, 0.0);
+    }];
+        NSLog(@"LEFT");
 }
 
--(void)swiperight:(UISwipeGestureRecognizer *)gestureRecognizer {
-    //NSLog(@"Right");
+
+-(void)swiperight:(UISwipeGestureRecognizer *)gestureRecognizer{
+    [UIView animateWithDuration:0.5 animations:^{
+        self.view.frame = CGRectOffset(self.view.frame, 320.0, 0.0);
+//        self.view.frame = CGRectOffset(self.viewBlack.frame, 320.0, 0.0);
+//        self.view.frame = CGRectOffset(self.viewGreen.frame, 320.0, 0.0);
+        NSLog(@"Right");
+    }];
 }
 
 
