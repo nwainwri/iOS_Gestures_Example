@@ -16,6 +16,7 @@
 		F1700D6F211E41AA00FC704D /* iOS_Gestures_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1700D6E211E41AA00FC704D /* iOS_Gestures_ExampleTests.m */; };
 		F1700D7B211E631700FC704D /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1700D7A211E631700FC704D /* PanViewController.m */; };
 		F1700D7E211E633F00FC704D /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1700D7D211E633F00FC704D /* TapViewController.m */; };
+		F1700D81211E6B9300FC704D /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1700D80211E6B9300FC704D /* PinchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		F1700D7A211E631700FC704D /* PanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
 		F1700D7C211E633F00FC704D /* TapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapViewController.h; sourceTree = "<group>"; };
 		F1700D7D211E633F00FC704D /* TapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapViewController.m; sourceTree = "<group>"; };
+		F1700D7F211E6B9300FC704D /* PinchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
+		F1700D80211E6B9300FC704D /* PinchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				F1700D58211E41A900FC704D /* ViewController.h */,
 				F1700D7C211E633F00FC704D /* TapViewController.h */,
 				F1700D7D211E633F00FC704D /* TapViewController.m */,
+				F1700D7F211E6B9300FC704D /* PinchViewController.h */,
+				F1700D80211E6B9300FC704D /* PinchViewController.m */,
 				F1700D59211E41A900FC704D /* ViewController.m */,
 				F1700D5B211E41A900FC704D /* Main.storyboard */,
 				F1700D5E211E41AA00FC704D /* Assets.xcassets */,
@@ -214,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1700D7B211E631700FC704D /* PanViewController.m in Sources */,
+				F1700D81211E6B9300FC704D /* PinchViewController.m in Sources */,
 				F1700D7E211E633F00FC704D /* TapViewController.m in Sources */,
 				F1700D5A211E41A900FC704D /* ViewController.m in Sources */,
 				F1700D65211E41AA00FC704D /* main.m in Sources */,

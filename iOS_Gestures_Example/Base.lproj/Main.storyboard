@@ -10,6 +10,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Pinch-->
+        <scene sceneID="7BD-xj-zXZ">
+            <objects>
+                <viewController id="ZXk-fe-L7l" customClass="PinchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGe-oM-DtA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.70457050139999999" green="0.087051199080000002" blue="0.70946000649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PaX-Qb-SlA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pinch" image="item3" id="PPh-fu-M77" userLabel="Pinch"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AyH-mh-wLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="476"/>
+        </scene>
         <!--Pan-->
         <scene sceneID="ckN-zc-qoE">
             <objects>
@@ -40,7 +57,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="872" y="303"/>
+            <point key="canvasLocation" x="1754" y="123"/>
         </scene>
         <!--Tap-->
         <scene sceneID="h1U-mC-Hfi">
@@ -56,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xkz-so-fZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="-362"/>
+            <point key="canvasLocation" x="1038" y="-550"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1wU-3i-DAy">
@@ -70,6 +87,7 @@
                     <connections>
                         <segue destination="HYA-7C-k2j" kind="relationship" relationship="viewControllers" id="auo-xE-Vlz"/>
                         <segue destination="0sz-mX-fsN" kind="relationship" relationship="viewControllers" id="bS1-Fu-meW"/>
+                        <segue destination="ZXk-fe-L7l" kind="relationship" relationship="viewControllers" id="uDl-tf-pTD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiF-Zi-nIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -80,5 +98,6 @@
     <resources>
         <image name="item1" width="30" height="30"/>
         <image name="item2" width="30" height="28"/>
+        <image name="item3" width="30" height="28"/>
     </resources>
 </document>
