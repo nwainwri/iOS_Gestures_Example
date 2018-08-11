@@ -22,7 +22,7 @@
     
     UIView *view = [[UIView alloc] initWithFrame:frame];
     
-    view.backgroundColor = [UIColor purpleColor];
+    view.backgroundColor = [UIColor blueColor];
     
     [self.view addSubview:view];
     
@@ -31,9 +31,6 @@
     
     
 }
-
-
-
 
 - (void) viewPinched:(UIPinchGestureRecognizer *) sender{
     CGFloat scale = sender.scale;
