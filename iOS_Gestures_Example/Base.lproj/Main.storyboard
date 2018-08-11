@@ -25,7 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AyH-mh-wLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="-304"/>
+            <point key="canvasLocation" x="2020" y="-656"/>
         </scene>
         <!--Pan-->
         <scene sceneID="ckN-zc-qoE">
@@ -57,7 +57,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1894" y="-835"/>
+            <point key="canvasLocation" x="1356" y="-907"/>
         </scene>
         <!--Tap-->
         <scene sceneID="h1U-mC-Hfi">
@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xkz-so-fZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="-988"/>
+            <point key="canvasLocation" x="682" y="-1161"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1wU-3i-DAy">
@@ -90,16 +90,34 @@
                         <segue destination="ZXk-fe-L7l" kind="relationship" relationship="viewControllers" id="uDl-tf-pTD"/>
                         <segue destination="DuT-r2-jcp" kind="relationship" relationship="viewControllers" id="Wbz-oL-zGK"/>
                         <segue destination="orC-mQ-0DX" kind="relationship" relationship="viewControllers" id="ScN-6z-Wx8"/>
+                        <segue destination="Ily-Vd-kbr" kind="relationship" relationship="viewControllers" id="G7J-48-eAx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiF-Zi-nIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-343" y="-304"/>
         </scene>
+        <!--PanEdge-->
+        <scene sceneID="U2p-O7-jzG">
+            <objects>
+                <viewController id="Ily-Vd-kbr" customClass="PanEdgeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eam-rj-2FM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="DHp-1X-1aT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PanEdge" image="item4" id="2rO-Kg-orE" userLabel="PanEdge"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Wh-Kv-WOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="178"/>
+        </scene>
         <!--Roate-->
         <scene sceneID="Ttd-JE-qUr">
             <objects>
-                <viewController id="orC-mQ-0DX" sceneMemberID="viewController">
+                <viewController id="orC-mQ-0DX" customClass="RotateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RBf-KN-79g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,12 +129,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFp-jo-CQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="270"/>
+            <point key="canvasLocation" x="2020" y="59"/>
         </scene>
         <!--Swipe-->
         <scene sceneID="bwP-z5-NGe">
             <objects>
-                <viewController id="DuT-r2-jcp" sceneMemberID="viewController">
+                <viewController id="DuT-r2-jcp" customClass="SwipeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQz-KE-r49">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSl-1a-cXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2081" y="72"/>
+            <point key="canvasLocation" x="2767" y="-304"/>
         </scene>
     </scenes>
     <resources>

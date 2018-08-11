@@ -31,11 +31,11 @@
 // DOESN'T WORK; WHY NOT
 
 -(void)swipeleft:(UISwipeGestureRecognizer *)gestureRecognizer {
-    NSLog(@"LEFT");
+    //NSLog(@"LEFT");
 }
 
 -(void)swiperight:(UISwipeGestureRecognizer *)gestureRecognizer {
-    NSLog(@"Right");
+    //NSLog(@"Right");
 }
 
 

@@ -37,7 +37,7 @@
 }
 
 - (void) viewRotate:(UIPinchGestureRecognizer *) sender{
-
+    // no likey this s
     CGFloat scale = sender.scale;
     sender.view.transform = CGAffineTransformMakeScale(scale, scale);
     scale = 1.0;

@@ -19,6 +19,7 @@
 		F1700D81211E6B9300FC704D /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1700D80211E6B9300FC704D /* PinchViewController.m */; };
 		F1700D84211E81D700FC704D /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1700D83211E81D700FC704D /* SwipeViewController.m */; };
 		F1700D87211E945E00FC704D /* RotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1700D86211E945E00FC704D /* RotateViewController.m */; };
+		F1700D8A211E9B5600FC704D /* PanEdgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1700D89211E9B5600FC704D /* PanEdgeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		F1700D83211E81D700FC704D /* SwipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 		F1700D85211E945E00FC704D /* RotateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateViewController.h; sourceTree = "<group>"; };
 		F1700D86211E945E00FC704D /* RotateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateViewController.m; sourceTree = "<group>"; };
+		F1700D88211E9B5600FC704D /* PanEdgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanEdgeViewController.h; sourceTree = "<group>"; };
+		F1700D89211E9B5600FC704D /* PanEdgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanEdgeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				F1700D83211E81D700FC704D /* SwipeViewController.m */,
 				F1700D85211E945E00FC704D /* RotateViewController.h */,
 				F1700D86211E945E00FC704D /* RotateViewController.m */,
+				F1700D88211E9B5600FC704D /* PanEdgeViewController.h */,
+				F1700D89211E9B5600FC704D /* PanEdgeViewController.m */,
 				F1700D5B211E41A900FC704D /* Main.storyboard */,
 				F1700D59211E41A900FC704D /* ViewController.m */,
 				F1700D5E211E41AA00FC704D /* Assets.xcassets */,
@@ -235,6 +240,7 @@
 				F1700D65211E41AA00FC704D /* main.m in Sources */,
 				F1700D57211E41A900FC704D /* AppDelegate.m in Sources */,
 				F1700D84211E81D700FC704D /* SwipeViewController.m in Sources */,
+				F1700D8A211E9B5600FC704D /* PanEdgeViewController.m in Sources */,
 				F1700D87211E945E00FC704D /* RotateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
