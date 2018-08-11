@@ -81,12 +81,12 @@
 		F1700D54211E41A900FC704D /* iOS_Gestures_Example */ = {
 			isa = PBXGroup;
 			children = (
-				F1700D55211E41A900FC704D /* AppDelegate.h */,
-				F1700D56211E41A900FC704D /* AppDelegate.m */,
 				F1700D58211E41A900FC704D /* ViewController.h */,
 				F1700D59211E41A900FC704D /* ViewController.m */,
 				F1700D5B211E41A900FC704D /* Main.storyboard */,
 				F1700D5E211E41AA00FC704D /* Assets.xcassets */,
+				F1700D55211E41A900FC704D /* AppDelegate.h */,
+				F1700D56211E41A900FC704D /* AppDelegate.m */,
 				F1700D60211E41AA00FC704D /* LaunchScreen.storyboard */,
 				F1700D63211E41AA00FC704D /* Info.plist */,
 				F1700D64211E41AA00FC704D /* main.m */,
