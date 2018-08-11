@@ -10,9 +10,11 @@
 
 @interface SwipeViewController ()
 
-//-(void)swiperight:(UISwipeGestureRecognizer *)gestureRecognizer;
-//
-//-(void)swipeleft:(UISwipeGestureRecognizer *)gestureRecognizer;
+@property (weak, nonatomic) IBOutlet UIView *boxToBeSwiped;
+
+-(void)swiperight:(UISwipeGestureRecognizer *)gestureRecognizer;
+
+-(void)swipeleft:(UISwipeGestureRecognizer *)gestureRecognizer;
 
 
 @end
@@ -22,15 +24,19 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
   
-    UISwipeGestureRecognizer *swipeleft = [[UISwipeGestureRecognizer alloc]initWithTarget:self.view action:@selector(swipeleft:)];
+    UISwipeGestureRecognizer *swipeleft = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeleft:)];
     swipeleft.numberOfTouchesRequired = 1;
     swipeleft.direction = UISwipeGestureRecognizerDirectionLeft;
-    [self.view addGestureRecognizer:swipeleft];
+    [self.boxToBeSwiped addGestureRecognizer:swipeleft];
     
-    UISwipeGestureRecognizer *swiperight = [[UISwipeGestureRecognizer alloc]initWithTarget:self.view action:@selector(swiperight:)];
+    UISwipeGestureRecognizer *swiperight = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swiperight:)];
     swiperight.numberOfTouchesRequired = 1;
     swiperight.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swiperight];
+    [self.boxToBeSwiped addGestureRecognizer:swiperight];
+    
+    
+    
+    
     
     
     
@@ -41,20 +47,15 @@
 
 -(void)swipeleft:(UISwipeGestureRecognizer *)gestureRecognizer{
     [UIView animateWithDuration:0.5 animations:^{
-        self.view.frame = CGRectOffset(self.view.frame, -320.0, 0.0);
-//        self.viewBlack.frame = CGRectOffset(self.viewBlack.frame, -320.0, 0.0);
-//        self.viewGreen.frame = CGRectOffset(self.viewGreen.frame, -320.0, 0.0);
+        self.boxToBeSwiped.frame = CGRectOffset(self.boxToBeSwiped.frame, -320.0, 0.0);
+
     }];
-        NSLog(@"LEFT");
 }
 
 
 -(void)swiperight:(UISwipeGestureRecognizer *)gestureRecognizer{
     [UIView animateWithDuration:0.5 animations:^{
-        self.view.frame = CGRectOffset(self.view.frame, 320.0, 0.0);
-//        self.view.frame = CGRectOffset(self.viewBlack.frame, 320.0, 0.0);
-//        self.view.frame = CGRectOffset(self.viewGreen.frame, 320.0, 0.0);
-        NSLog(@"Right");
+        self.boxToBeSwiped.frame = CGRectOffset(self.boxToBeSwiped.frame, 320.0, 0.0);
     }];
 }
 

@@ -9,7 +9,8 @@
 #import "PanEdgeViewController.h"
 
 @interface PanEdgeViewController ()
-
+- (void) grabEdge:(UIScreenEdgePanGestureRecognizer *) sender;
+@property UIView *boxToBeGrabbed;
 @end
 
 @implementation PanEdgeViewController
@@ -21,34 +22,26 @@
     CGFloat height = 300;
     CGRect frame = CGRectMake(CGRectGetMaxX(self.view.bounds) - 20, CGRectGetMaxY(self.view.bounds) /4, width, height);
     
-    UIView *view = [[UIView alloc] initWithFrame:frame];
+    self.boxToBeGrabbed = [[UIView alloc] initWithFrame:frame];
+    self.boxToBeGrabbed.backgroundColor = [UIColor greenColor];
     
-    view.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:self.boxToBeGrabbed];
     
-    [self.view addSubview:view];
-    
-    UIScreenEdgePanGestureRecognizer *panEdgeGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(grabEdge:)];
+    UIScreenEdgePanGestureRecognizer *panEdgeGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(edgeGrabbed)];
+    panEdgeGesture.delegate = self;
+    [panEdgeGesture setEdges:UIRectEdgeRight];
+    [panEdgeGesture setEdges:UIRectEdgeLeft];
     [self.view addGestureRecognizer:panEdgeGesture];
     
-//    [self.view addGestureRecognizer:swiperight];
-    //[panGesture release];
-    
-//    UISwipeGestureRecognizer *swiperight = [[UISwipeGestureRecognizer alloc]initWithTarget:self.view action:@selector(swiperight:)];
-//    swiperight.numberOfTouchesRequired = 1;
-//    swiperight.direction = UISwipeGestureRecognizerDirectionRight;
-//    [self.view addGestureRecognizer:swiperight];
-
 }
 
 
 - (void) grabEdge:(UIScreenEdgePanGestureRecognizer *) sender{
-// do shit here
-//    UIRectEdgeLeft
     NSLog(@"PAN ECGE");
-    
-    
-    
-    
+}
+
+- (void) edgeGrabbed {
+    NSLog(@"Edge grabbed");
 }
 
 @end

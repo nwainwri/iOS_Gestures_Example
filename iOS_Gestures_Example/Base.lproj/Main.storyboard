@@ -158,6 +158,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Swipe" image="item4" id="279-Ld-GI3" userLabel="Swipe"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="boxToBeSwiped" destination="a3N-LK-ohI" id="FcD-Xb-alG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSl-1a-cXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
