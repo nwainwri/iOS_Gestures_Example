@@ -17,7 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="rNo-0W-kws">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="OOC-E4-mgF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pan" image="item1" landscapeImage="item1" id="3Zr-ZW-b8Y" userLabel="Pan"/>
@@ -33,7 +33,7 @@
                     <view key="view" contentMode="scaleToFill" id="jzs-km-hHo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="LJU-6q-8bN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tap" image="item2" id="clA-0z-5NG" userLabel="Tap"/>
