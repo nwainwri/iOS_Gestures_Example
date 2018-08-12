@@ -101,7 +101,6 @@
 			children = (
 				F1700D79211E631700FC704D /* PanViewController.h */,
 				F1700D7A211E631700FC704D /* PanViewController.m */,
-				F1700D58211E41A900FC704D /* ViewController.h */,
 				F1700D7C211E633F00FC704D /* TapViewController.h */,
 				F1700D7D211E633F00FC704D /* TapViewController.m */,
 				F1700D7F211E6B9300FC704D /* PinchViewController.h */,
@@ -113,6 +112,7 @@
 				F1700D88211E9B5600FC704D /* PanEdgeViewController.h */,
 				F1700D89211E9B5600FC704D /* PanEdgeViewController.m */,
 				F1700D5B211E41A900FC704D /* Main.storyboard */,
+				F1700D58211E41A900FC704D /* ViewController.h */,
 				F1700D59211E41A900FC704D /* ViewController.m */,
 				F1700D5E211E41AA00FC704D /* Assets.xcassets */,
 				F1700D55211E41A900FC704D /* AppDelegate.h */,

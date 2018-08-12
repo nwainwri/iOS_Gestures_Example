@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PanEdgeViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface PanEdgeViewController : UIViewController 
 
 @end

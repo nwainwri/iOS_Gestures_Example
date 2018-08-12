@@ -34,7 +34,7 @@
     swiperight.direction = UISwipeGestureRecognizerDirectionRight;
     [self.boxToBeSwiped addGestureRecognizer:swiperight];
     
-    
+//    [self.boxToBeSwiped removeGestureRecognizer:swipeleft]; // medhto to call to remove a gesture
     
     
     
