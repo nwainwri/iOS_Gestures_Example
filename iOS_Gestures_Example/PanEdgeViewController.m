@@ -24,9 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGFloat width = 100;
+    CGFloat width = 200;
     CGFloat height = 300;
-    CGRect frame = CGRectMake(CGRectGetMaxX(self.view.bounds) - 20, CGRectGetMaxY(self.view.bounds) /4, width, height);
+    CGRect frame = CGRectMake(CGRectGetMaxX(self.view.bounds) - 50, CGRectGetMaxY(self.view.bounds) /4, width, height);
     
     self.boxToBeGrabbed = [[UIView alloc] initWithFrame:frame];
     self.boxToBeGrabbed.backgroundColor = [UIColor greenColor];
@@ -51,30 +51,54 @@
 }
 
 - (void) edgeGrabbedRight:(UIScreenEdgePanGestureRecognizer *)gestureRecognizer {
-    
-    [UIView animateWithDuration:0.7 animations:^{
-        self.boxToBeGrabbed.frame = CGRectOffset(self.boxToBeGrabbed.frame, -5.0, 0.0);
-    }];
-    
+//    [UIView animateWithDuration:0.7 animations:^{
+//        self.boxToBeGrabbed.frame = CGRectOffset(self.boxToBeGrabbed.frame, -5.0, 0.0);
+//    }];
+    CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
+
     if(UIGestureRecognizerStateBegan == gestureRecognizer.state ||
        UIGestureRecognizerStateChanged == gestureRecognizer.state) {
-        CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
+//        CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
         
+//        NSLog(@"TRANSLATION: %f", translation.x);
+        // RIGHT EDGE OF SCREEN IS 375POINTS
+
         self.boxToBeGrabbed.center = CGPointMake(_rightEdgeScreen + translation.x, self.boxToBeGrabbed.center.y);
-    } else {  // cancel, fail, or ended
+        if (translation.x < -105) {
+            self.boxToBeGrabbed.center = CGPointMake(translation.x, self.boxToBeGrabbed.center.y);
+        }
+        
+        
+    }
+    else {  // cancel, fail, or ended
         // reset
+//        NSLog(@"RESETTTING");
+
+        if (translation.x < -105) {
+//            NSLog(@"MARK HERE?");
+            [UIView animateWithDuration:.3 animations:^{
+                self.boxToBeGrabbed.center = CGPointMake(_rightEdgeScreen, self.boxToBeGrabbed.center.y);
+                
+            }];
+        }
 
         // Animate back to center x
-        [UIView animateWithDuration:.3 animations:^{
-            self.boxToBeGrabbed.center = CGPointMake(_rightEdgeScreen, self.boxToBeGrabbed.center.y);
-            
-        }];
+//        [UIView animateWithDuration:.3 animations:^{
+//            self.boxToBeGrabbed.center = CGPointMake(_rightEdgeScreen, self.boxToBeGrabbed.center.y);
+//
+//        }];
     }
 }
 
 -(void)swiperight:(UISwipeGestureRecognizer *)gestureRecognizer{
     [UIView animateWithDuration:0.7 animations:^{
-        self.boxToBeGrabbed.frame = CGRectOffset(self.boxToBeGrabbed.frame, 70.0, 0.0);
+//        self.boxToBeGrabbed.frame = CGRectOffset(self.boxToBeGrabbed.frame, 70.0, 0.0);
+//        CGPointMake(<#CGFloat x#>, <#CGFloat y#>)
+//        CGRectOffset(<#CGRect rect#>, <#CGFloat dx#>, <#CGFloat dy#>)
+        
+        self.boxToBeGrabbed.frame = CGRectOffset(self.boxToBeGrabbed.frame, _rightEdgeScreen, 0.0);
+        
+//        self.boxToBeGrabbed.center = CGPointMake(_rightEdgeScreen, self.boxToBeGrabbed.center.y);
     }];
 }
 
